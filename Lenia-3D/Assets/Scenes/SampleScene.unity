@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd2e4d82045a5d49b0cb56a446ec7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridDimension: {x: 3, y: 3, z: 3}
+  gridDimension: {x: 10, y: 10, z: 10}
   grille: {fileID: 1234714161}
   cubePrefabs: {fileID: 495306434835626204, guid: ed50881f18688354fbd37564f9f5c1ad,
     type: 3}

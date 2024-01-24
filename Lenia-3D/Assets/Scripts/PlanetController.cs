@@ -15,10 +15,14 @@ public class PlanetController : MonoBehaviour
     void Start()
     {
         GenerateGrid();
+        InvokeRepeating("Oneturn", 1f, 0.2f);
     }
 
     // Update is called once per frame
     void FixedUpdate()
+    {
+    }
+    void Oneturn()
     {
         UpdateCircle();
         UpdateLife();
@@ -73,6 +77,7 @@ public class PlanetController : MonoBehaviour
     }
     void GetAdjacentCubes(Vector3Int targetPosition)
     {
+        cubes[targetPosition.x][targetPosition.y][targetPosition.z].circle = 0;
         int startX = Mathf.Max(0, Mathf.FloorToInt(targetPosition.x) - 1);
         int startY = Mathf.Max(0, Mathf.FloorToInt(targetPosition.y) - 1);
         int startZ = Mathf.Max(0, Mathf.FloorToInt(targetPosition.z) - 1);
